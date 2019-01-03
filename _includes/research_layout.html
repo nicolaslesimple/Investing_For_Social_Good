@@ -1,0 +1,51 @@
+ <!-- Research Layout -->
+
+ {% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ post.title }}</h2>
+                        </div>
+                        <br>
+                        <div class="wrapper_button">
+                            <button type= "button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                        </div>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <br>
+                            <p><strong> Abstract:  </strong> {{ post.description }}</p>
+                            <br>
+                            <p> {{ post.content }}</p>
+                            <ul class="list-inline item-details">
+                                <li> Client:
+                                    <strong><a href="https://dlab.epfl.ch/teaching/fall2018/cs401/">{{ post.client }}</a>
+                                    </strong>
+                                </li>
+                                <li> Date:
+                                    <strong>
+                                        {{ post.project-date }}
+                                    </strong>
+                                </li>
+                                <li> Service:
+                                    <strong>{{ post.category }}</strong>
+                                </li>
+                            </ul>
+                            <div class="wrapper_button">
+                                <button type= "button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                            </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

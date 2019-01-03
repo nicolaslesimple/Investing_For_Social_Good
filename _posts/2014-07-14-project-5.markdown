@@ -1,0 +1,19 @@
+---
+title: Other Countries
+subtitle: International Outreach
+layout: default
+modal-id: 5
+date: 2014-07-14
+img: int.jpg
+thumbnail: banner.jpg
+alt: image-alt
+project-date: December 2018
+client: ADA - EPFL
+category: outreach
+description: data available outside the us
+---
+
+
+# Coming Soon 
+
+One huge improvment of our project could be to generalized this stuy to the entire world. To do that, new dataset need to be found and analyse but having the a worldwide view could allows to understand lot more mechanisms behind theses investments.

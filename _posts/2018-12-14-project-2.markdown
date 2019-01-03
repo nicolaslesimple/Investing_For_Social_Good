@@ -1,0 +1,85 @@
+---
+title: The Asset Manager's Portfolio
+subtitle: Portfolio
+layout: default
+modal-id: 2
+date: 2018-12-14
+img: stock.jpg
+thumbnail: stock.png
+alt: image-alt
+project-date: December 2018
+client: EPFL - ADA Course
+category: Assets
+description: Financial asset is a non-physical asset whose value is derived from a contractual claim, such as bank deposits, bonds, and stocks. Financial assets are usually more liquid than other tangible assets, such as commodities or real estate, and may be traded on financial markets
+
+---
+
+# Introduction & Definitions 
+
+This data substory aims to understand the types of investments asset management investors favor, and to examine the motivations behind asset manager's investments into the best and worst social impact investments.
+
+### The Ethical Puzzle
+
+Although the definition of ethical investing could be stated as simply purchasing investments from issuers who act ethically, 
+investors who seek to achieve this must first establish a set of criteria that can be used to determine what actions and 
+practices are considered ethical to them. For example, the Bible and other religious books provide rules and principles for
+ people to live by, and those who believe what those books say use them as guides to evaluate things in the world around them. 
+ Religious texts and other moral teachings, however, do not always provide crystal-clear guidance for practical investment decisions.
+Although creating or finding the ethical criteria to use as the basis for evaluating investments may often be relatively simple, 
+effectively applying that criteria to actual investment choices can be more difficult. For instance, the Bible condemns 
+drunkenness in several passages, but does this then make it unconditionally wrong to purchase securities issued by makers of 
+alcoholic beverages? Since not all consumers of alcohol get drunk, then the investor will have to decide for him or herself 
+whether this investment truly supports immoral behavior. Virtually all issuers of securities or investments most likely do 
+something that at least a substantial percentage of their investors do not approve of (how many investors who buy Treasury 
+securities approve of everything that is done by the government?). Of course, this begs the question of which practices and 
+policies are tolerable for investors and which are not.
+
+### Assets
+According to the International Financial Reporting Standards (IFRS), a **financial asset** can be:
+- Cash or cash equivalent,
+- Equity instruments of another entity,
+- Contractual right to receive cash or another financial asset from another entity or to exchange financial assets or financial liabilities with another entity under conditions that are potentially favourable to the entity,
+- A contract that will or may be settled in the entity's own equity instruments and is either a non-derivative for which the entity is or may be obliged to receive a variable number of the entity's own equity instruments, or a derivative that will or may be settled other than by exchange of a fixed amount of cash or another financial asset for a fixed number of the entity's own equity instruments.
+
+**Used Dataset:** [SEC asset manager portfolios](https://www.sec.gov/cgi-bin/browse-edgar?company=&CIK=&type=13F&owner=include&count=40&action=getcurrent)
+
+## Research Questions
+- What are the most popular “ethical” or “unethical” investments held by asset managers?
+
+## Results 
+
+#### Popularity of High Social Impact Stocks
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~mike.jiao/12.embed"></iframe>
+
+The heatmap shows the most and least popular “ethical” investments held by asset managers. It shows the number of investors in 2017 for each stock that scored within the top 10% of Just Capital Social Impact stocks, where stocks scoring in the top 10% of Just Capital Social Impact scores are labeled “ethical”. 
+Said slightly differently, the heatmap displays the social impact (scored by Just Capital) of each stock within the top 10% of Just Capital Social Impact Scores, as well as the number of large institutional investors (with at least 100M in US 13F type securities) that own that stock. 
+More popular stocks are represented by lighter colours, whereas less popular stocks are represented with darker colours. 
+Although the top 10% of Just Capital Social Impact Scores corresponds to 87 stocks, only 43 stocks are shown in this heatmap. This is because half of these stocks are not held by any large asset manager investor.
+
+
+#### Popularity of Low Social Impact Stocks
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~mike.jiao/14.embed"></iframe>
+
+The heatmap follows an identical format to the previous heatmap, and shows the most and least popular “unethical” investments held by asset managers. These stocks correspond to bottom 10% of Just Capital Social Impact Scores. 
+
+## Discussion 
+
+### High Impact Stock Popularity Observations
+
+We can see that **technology companies**, as an industry category, are the most popular “ethical” investments held by asset managers. A large number of stocks shown in the *Popularity of High Social Impact Stocks* plot represent technology companies, including Apple (APPL) with a social impact score of 59.97005 and 1181 large asset manager investors, and Microsoft (MSFT) with a social impact score of 68.55428 and 948 large asset manager investors. 
+
+Another popular type of high impact stock are Blue Chip stocks (stocks with a history of reliable returns that are highly trusted by the larger investment industry) such as Johnson & Johnson (JNJ) with a social impact score of 59.94658 and 833 large asset manager investors, and Nike (NKE) also appear. 
+
+We also notice that there is an uneven distribution of stocks within the highest social impact stocks. Although the top 10% of social impact stocks have social impact scores ranging from 53 to 70, few stocks exist in the upper half of this range, with scores higher than 63 points.
+
+### Low Impact Stock Popularity Observations
+We can see that **companies employing large, less educated labour forces** are the most popular "unethical" investments held by asset managers. As shown in the *Popularity of Low Social Impact Stocks* plot, these include a large number of manufacturing and retail companies, including Tesla (TSLA) with a score of 45.05744 and 66 large asset manager investors, Goodyear Tire and Rubber Company (GT) with a score of 45.96831 and 15 large asset manager investors, and TJX Companies (TJX) with a score of 44.58723 and 67 large asset manager investors.
+
+Similar to the *Popularity of High Social Impact Stocks* plot, Blue Chip stocks once again appear. These include stocks such as Sourthern Co (SO) with a social impact score of 44.58723 and 32 large asset manager investors, and Stryker Corporation (SYK).
+
+We notice that large asset manager investors in general hold far fewer stocks in this category, with each stock individual stock having lower numbers of investors. There are also less stocks displayed in the *Popularity of Low Social Impact Stocks* plot compared to the *Popularity of High Social Impact Stocks* plot because many stocks (80%) in the bottom 10% of Just Capital Social Impact Scores are not held by any large asset manager investors. 
+
+## Conclusion
+Although the values and beliefs that guide ethically minded investors differ somewhat for each person, there are several 
+specific areas where ethics play a major role. According to our results the most popular "ethical" investments are technology 
+companies, with the most popular "unethical" investments being companies that employ large, uneducated labour forces such as manufacturing and retail companies. Blue Chip stocks also appear widely in both high and low impact stock lists. We observe, as an overall pattern, that large asset manager investors hold greater numbers of high impact stocks. However, we acknowledge that the technology companies that dominate the rankings of high social impact stocks have also dominated the financial markets in terms of returns on investment. Thus, an investor could easily end up selecting a portfolio with more high social impact investments simply based on looking for stocks with high historical financial growth - technology companies such as Amazon and Apple. 
